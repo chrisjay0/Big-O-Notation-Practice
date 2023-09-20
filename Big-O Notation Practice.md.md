@@ -9,11 +9,11 @@ Simplify the following big O expressions as much as possible:
 3. O(25)
    O(1)
 4. O(n^2 + n^3)
-   O(n^5)
+   O(n^3)
 5. O(n + n + n + n)
    O(n)
 6. O(1000 * log(n) + n)
-   O(n log n)
+   O(n)
 7. O(1000 * n * log(n) + n)
    O(n log n)
 8. O(2^n + n^2)
@@ -21,7 +21,7 @@ Simplify the following big O expressions as much as possible:
 9. O(5 + 3 + 1)
    O(1)
 10. O(n + n^(1/2) + n^2 + n * log(n)^10)
-   O(n^2 log n)
+   O(n^2)
 
 ## Step Two: Calculating Time Complexity
 
@@ -45,7 +45,7 @@ function logAtLeast10(n) {
 }
 ```
 
-Time Complexity: O(1)
+Time Complexity: O(n)
 
 ```
 function logAtMost10(n) {
@@ -55,7 +55,7 @@ function logAtMost10(n) {
 }
 ```
 
-Time Complexity: O(n)
+Time Complexity: O(1)
 
 ```
 function onlyElementsAtEvenIndex(array) {
@@ -115,7 +115,7 @@ Answer the following questions
 1. True or false: n^2 + n is O(n^2).
    True
 2. True or false: n^2 * n is O(n^3).
-   False
+   True
 3. True or false: n^2 + n is O(n).
     False
 4. What’s the time complexity of the .indexOf array method?
@@ -125,7 +125,7 @@ Answer the following questions
 6. What’s the time complexity of the .forEach array method?
    O(n)
 7. What’s the time complexity of the .sort array method?
-   O(n)
+   O(n log n)
 8. What’s the time complexity of the .unshift array method?
    O(n)
 9. What’s the time complexity of the .push array method?
